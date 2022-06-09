@@ -1,0 +1,14 @@
+{
+  "proxy": {
+    "/projectFinaly/ws": {
+      "target": "ws://localhost:8282",
+      "ws": true
+    },
+    "/projectFinaly/upload-photo": {
+      "target": "http://localhost:8282"
+    },
+    "/projectFinaly/image/photoUser": {
+      "target": "http://localhost:8282"
+    }
+  }
+}

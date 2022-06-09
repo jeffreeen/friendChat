@@ -1,0 +1,169 @@
+html, body, #app, #main {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+}
+
+.login-submit {
+  border-radius: 5px;
+}
+
+.login-submit:hover {
+  border: none;
+	background: goldenrod;
+	color: #f2f2f2;
+	position: relative;
+	box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#main {
+  display: flex;
+}
+
+.left-side {
+  flex-grow: 1;
+  max-width: 320px;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
+  color: #FEFEFD;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.user-list-header {
+  color: #16014c;
+}
+
+.user-info {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffac;
+}
+
+.user-photo, .message-item-photo {
+  margin-right: 15px;
+  background: url(./image/no-photo.png);
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.user-list-header {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.user-list {
+  padding: 5px 0 0 10px
+}
+
+.right-side {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.messages-container {
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+.input-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.message-input {
+  height: 30px;
+  flex-grow: 1;
+  margin: 0 10px 0 0;
+}
+
+.send-button {
+  height: 25px;
+}
+
+#login {
+  position: absolute;
+  top: 20vh;
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #7f7f7f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-field {
+  margin: 15px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-field input {
+  font-size: 16px;
+  height: 30px;
+  width: 100%;
+}
+
+.login-submit {
+  height: 30px;
+  width: 100px;
+}
+
+.message-item {
+  display: flex;
+}
+
+.message-item-system {
+  font-size: 14px;
+  color: gray;
+}
+
+.message-item ~ .message-item {
+  margin-top: 15px;
+}
+
+.message-item-right {
+  flex-grow: 1;
+}
+
+.message-item-header {
+  display: flex;
+  align-items: center;
+}
+
+.message-item-header-name {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.message-item-header-time {
+  color: gray;
+  font-size: 12px;
+}
+
+.hidden {
+  visibility: hidden
+}
